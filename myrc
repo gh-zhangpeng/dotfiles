@@ -1,0 +1,44 @@
+#env variables
+##golang
+#export GOROOT="/usr/local/go"
+#export GOPATH="$HOME/go"
+#export PATH=$PATH:$GOPATH/bin
+#export GO111MODULE=on
+#export GOPROXY=https://goproxy.io
+##android
+#export ANDROID_HOME=$HOME/Library/Android/sdk
+##Flutter
+#export PATH=$HOME/flutter/bin:$PATH
+#export PUB_HOSTED_URL=https://pub.flutter-io.cn
+#export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+#alias
+alias cd.root='cd /'
+alias cd.home='cd ~'
+alias cd.desktop='cd $HOME/Desktop'
+
+alias show.ip="ifconfig | grep 'inet' | grep -v '127.0.0.1' | grep -v 'inet6' | awk '{print \$2}'"
+alias show.size='du -sh ./* | sort -hr'
+
+alias copy.pwd="pwd | pbcopy"
+alias copy.sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
+alias copy.ip="ifconfig | grep 'inet' | grep -v '127.0.0.1' | grep -v 'inet6' | awk '{print \$2}' | pbcopy"
+
+alias create.sshKey="ssh-keygen -t rsa -C "zhangpeng.0304@aliyun.com""
+
+#function
+mkcd () {
+  mkdir -p $1 && cd "./$1"
+}
+
+prettyjson_s() {
+    echo "$1" | python3 -m json.tool
+}
+
+prettyjson_f() {
+    python3 -m json.tool "$1"
+}
+
+prettyjson_w() {
+    curl "$1" | python3 -m json.tool
+}
