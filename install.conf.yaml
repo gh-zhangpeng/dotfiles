@@ -18,6 +18,7 @@
     - ~/Desktop/zhangpeng01
 
 - link:
+    ~/.myrc: myrc
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
 

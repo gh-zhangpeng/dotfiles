@@ -2,19 +2,19 @@
 
 set -e
 
-# --- Homebrew ---
-# # 设置环境变量
-# export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
-# export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
-# export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
-# # 删除本地安装文件
-# rm -rf brew-install
-# # 下载新的安装文件
-# git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
-# # 安装 Homebrew
-# /bin/bash brew-install/install.sh
-# # 清理安装文件
-# rm -rf brew-install
+--- Homebrew ---
+# 设置环境变量
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+# 删除本地安装文件
+rm -rf brew-install
+# 下载新的安装文件
+git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
+# 安装 Homebrew
+/bin/bash brew-install/install.sh
+# 清理安装文件
+rm -rf brew-install
 
 # --- dotbot ---
 CONFIG="install.conf.yaml"
