@@ -79,3 +79,4 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
+let g:go_fmt_command = "goimports" " 格式化将默认的 gofmt 替换
