@@ -29,6 +29,7 @@
     - git-lfs
     #vim
     - vim
+    - font-hack-nerd-font
     # - neovim
     - ctags
     #language
